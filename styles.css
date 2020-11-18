@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    color: azure;
+    text-shadow: 3px 3px 2px black;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+.card-container {
+    background-color: aquamarine;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+    border-radius: 35px;
+    border: 2px solid azure;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+                15px 15px 15px rgba(0,0,0,0.1),
+                inset -5px -5px 5px rgba(255,255,255,0.2),
+                inset 5px 5px 5px rgba(0,0,0,0.1);
+    position: relative;
+    
+}
+
+.card-container h2 {
+    margin-top: 15px;
+    margin-left: 25px;
+    color: azure;
+    width: 80%;
+    height: 35px;
+    display: inline-flex;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgb(50, 153, 153);
+}
+
+.input-value {
+    width: 58%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.2),
+                5px 5px 5px rgba(0,0,0,0.1);
+    padding-left: 5px;
+    background-color: rgb(213, 255, 240);
+}
+
+.btn1 {
+    width: 28%;
+    height: 35px;
+    position: absolute;
+    top: 50px;
+    right: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(48, 95, 250);
+    color: cyan;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.2),
+                5px 5px 5px rgba(0,0,0,0.1);
+}
+
+.card-container h4 {
+    margin-top: 50px;
+    margin-left: 25px;
+    color: rgb(23, 158, 158);
+    width: 80%;
+    height: 35px;
+
+}
+
+.result {
+    background-color: aquamarine;
+    width: 80%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    border-radius: 15px;
+    border: 2px solid azure;
+    box-shadow: -10px -10px 10px rgba(255,255,255,0.2),
+                10px 10px 10px rgba(0,0,0,0.1),
+                inset -5px -5px 5px rgba(255,255,255,0.2),
+                inset 5px 5px 5px rgba(0,0,0,0.1);
+    position: absolute;
+    bottom: 0px;
+    padding: 3px;
+}
+
+.result h3 {
+    color: azure;
+    font-size: 1.3rem;
+}
