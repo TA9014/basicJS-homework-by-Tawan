@@ -517,7 +517,7 @@ function advExercise14() {
                         advEx14 += `${m}`;
                         m++;
                     } else {
-                        advEx14 += '-';
+                        advEx14 += '-'; 
                     }
                 }
             }
