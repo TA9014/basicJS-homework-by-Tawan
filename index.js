@@ -265,10 +265,10 @@ function advExercise5() {
                     } else {
                         advEx5 += '*';
                     }
-                } else if (i === inpEx5 ) {
+                } else if (i === inpEx5) {
                     advEx5 += '*';
                 } else {
-                    if ((i+j-(+inpEx5)) > (+inpEx5)){
+                    if ((i + j - (+inpEx5)) > (+inpEx5)) {
                         advEx5 += '-';
                     } else {
                         advEx5 += '*';
@@ -296,13 +296,13 @@ function advExercise6() {
                     } else {
                         advEx6 += `${i}`;
                     }
-                } else if (i === inpEx6 ) {
+                } else if (i === inpEx6) {
                     advEx6 += `${i}`;
                 } else {
-                    if ((i+j-(+inpEx6)) > (+inpEx6)){
+                    if ((i + j - (+inpEx6)) > (+inpEx6)) {
                         advEx6 += '-';
                     } else {
-                        advEx6 += `${(inpEx6*2) - i}`;
+                        advEx6 += `${(inpEx6 * 2) - i}`;
                     }
                 }
             }
@@ -319,9 +319,9 @@ function advExercise7() {
         alert('Please enter an integer')
     } else {
         let advEx7 = "";
-        for ( let i=1; i<=inpEx7; i++){
+        for (let i = 1; i <= inpEx7; i++) {
             for (let j = inpEx7; j >= 1; j--) {
-                if ( i < j ) {
+                if (i < j) {
                     advEx7 += '-';
                 } else {
                     advEx7 += '*';
@@ -340,9 +340,9 @@ function advExercise8() {
         alert('Please enter an integer')
     } else {
         let advEx8 = "";
-        for ( let i=1; i<=inpEx8; i++){
+        for (let i = 1; i <= inpEx8; i++) {
             for (let j = 1; j <= inpEx8; j++) {
-                if ( i > j ) {
+                if (i > j) {
                     advEx8 += '-';
                 } else {
                     advEx8 += '*';
@@ -353,4 +353,178 @@ function advExercise8() {
         document.querySelector('#inpEx8').innerHTML = `You enter number ${inpEx8}`
         document.querySelector('#resultEx8').innerHTML = advEx8
     }
+}
+
+function advExercise9() {
+    let inpEx9 = document.querySelector('#input1Ex9').value;
+    if (isNaN(inpEx9)) {
+        alert('Please enter an integer')
+    } else {
+        let advEx9 = "";
+        for (let i = 1; i <= ((inpEx9 * 2) - 1); i++) {
+            if (i <= inpEx9) {
+                for (let j = inpEx9; j >= 1; j--) {
+                    if (j > i) {
+                        advEx9 += '-';
+                    } else {
+                        advEx9 += '*';
+                    }
+                }
+            } else {
+                for (let j = 1; j <= inpEx9; j++) {
+                    if ((i - j) > (inpEx9 - 1)) {
+                        advEx9 += "-";
+                    } else {
+                        advEx9 += "*";
+                    }
+                }
+            }
+            advEx9 += '<br>'
+        }
+        document.querySelector('#inpEx9').innerHTML = `You enter number ${inpEx9}`;
+        document.querySelector('#resultEx9').innerHTML = advEx9;
+    }
+}
+
+function advExercise10() {
+    let inpEx10 = document.querySelector('#input1Ex10').value;
+    if (isNaN(inpEx10)) {
+        alert('Please enter an integer')
+    } else {
+        let advEx10 = "";
+        let m = 1;
+        for (let i = 1; i <= (inpEx10 * 2) - 1; i++) {
+            if (i <= inpEx10) {
+                for (let j = inpEx10; j >= 1; j--) {
+                    if (j > i) {
+                        advEx10 += '-';
+                    } else {
+                        advEx10 += `${m}`;
+                        m++;
+                    }
+                }
+            } else {
+                for (let j = 1; j <= inpEx10; j++) {
+                    if ((i - j) > (inpEx10 - 1)) {
+                        advEx10 += '-';
+                    } else {
+                        advEx10 += `${m}`;
+                        m++;
+                    }
+                }
+            }
+            advEx10 += '<br>'
+        }
+        document.querySelector('#inpEx10').innerHTML = `You enter number ${inpEx10}`;
+        document.querySelector('#resultEx10').innerHTML = advEx10;
+    }
+}
+
+function advExercise11() {
+    let inpEx11 = document.querySelector('#input1Ex11').value;
+    if (isNaN(inpEx11)) {
+        alert('Please enter an integer')
+    } else {
+        let advEx11 = "";
+        for (let i = 1; i <= inpEx11; i++) {
+            for (let j = 1; j <= (inpEx11 * 2) - 1; j++) {
+                if (j >= (+inpEx11 - (i - 1)) && j <= (+inpEx11 + (i - 1))) {
+                    advEx11 += '*';
+                } else {
+                    advEx11 += '-';
+                }
+            }
+            advEx11 += '<br>'
+        }
+        document.querySelector('#inpEx11').innerHTML = `You enter number ${inpEx11}`;
+        document.querySelector('#resultEx11').innerHTML = advEx11;
+    }
+}
+
+function advExercise12() {
+    let inpEx12 = document.querySelector('#input1Ex12').value;
+    if (isNaN(inpEx12)) {
+        alert('Please enter an integer')
+    } else {
+        let advEx12 = "";
+        for (let i = 1; i <= inpEx12; i++) {
+            for (let j = 1; j <= (inpEx12 * 2) - 1; j++) {
+                if (j >= (+inpEx12 - (inpEx12 - i)) && j <= (+inpEx12 + (inpEx12 - i))) {
+                    advEx12 += '*';
+                } else {
+                    advEx12 += '-';
+                }
+            }
+            advEx12 += '<br>'
+        }
+        document.querySelector('#inpEx12').innerHTML = `You enter number ${inpEx12}`;
+        document.querySelector('#resultEx12').innerHTML = advEx12;
+    }
+}
+
+function advExercise13() {
+    let inpEx13 = document.querySelector('#input1Ex13').value;
+    if (isNaN(inpEx13)) {
+        alert('Please enter an integer')
+    } else {
+        let advEx13 = "";
+        for (let i = 1; i <= (inpEx13 * 2) - 1; i++) {
+            if (i <= inpEx13) {
+                for (let j = 1; j <= (inpEx13 * 2) - 1; j++) {
+                    if (j >= (+inpEx13 - (i - 1)) && j <= (+inpEx13 + (i - 1))) {
+                        advEx13 += '*';
+                    } else {
+                        advEx13 += '-';
+                    }
+                }
+            } else {
+                for (let j = 1; j <= (inpEx13 * 2) - 1; j++) {
+                    if (j >= (+inpEx13 - (2*inpEx13 - i -1)) && j <= (+inpEx13 + (2*inpEx13 - i -1))) {
+                        advEx13 += '*';
+                    } else {
+                        advEx13 += '-';
+                    }
+                }
+            }
+            advEx13 += '<br>'
+        }
+        document.querySelector('#inpEx13').innerHTML = `You enter number ${inpEx13}`;
+        document.querySelector('#resultEx13').innerHTML = advEx13;
+    }
+
+}
+
+function advExercise14() {
+    let inpEx14 = document.querySelector('#input1Ex14').value;
+    if (isNaN(inpEx14)) {
+        alert('Please enter an integer')
+    } else {
+        let advEx14 = "";
+        let m = 1;
+        for (let i = 1; i <= (inpEx14 * 2) - 1; i++) {
+            if (i <= inpEx14) {
+                for (let j = 1; j <= (inpEx14 * 2) - 1; j++) {
+                    if (j >= (+inpEx14 - (i - 1)) && j <= (+inpEx14 + (i - 1))) {
+                        advEx14 += `${m}`;
+                        m++
+                    } else {
+                        advEx14 += '-';
+                    }
+                }
+            } else {
+                for (let j = 1; j <= (inpEx14 * 2) - 1; j++) {
+                    if (j >= (+inpEx14 - (2*inpEx14 - i -1)) && j <= (+inpEx14 + (2*inpEx14 - i -1))) {
+                        advEx14 += `${m}`;
+                        m++;
+                    } else {
+                        advEx14 += '-';
+                    }
+                }
+            }
+            advEx14 += '<br>'
+        }
+        document.querySelector('#inpEx14').innerHTML = `You enter number ${inpEx14}`;
+        document.querySelector('#resultEx14').innerHTML = advEx14;
+    }
+
 }
